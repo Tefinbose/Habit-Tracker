@@ -19,7 +19,7 @@ function Header() {
         <>
 
             <nav>
-                <div className="row d-flex justify-content-between pt-3 pb-2 align-items-center" style={{ background: '#9b0067' }}>
+                <div className="row d-flex justify-content-between pt-3 pb-2 align-items-center w-100" style={{ background: '#9b0067', width:'100%',width: '100%',margin: '0'}}>
                     <div className="col-6 col-md-3 text-start ps-4">
                         <h2 className="text-white mb-0">
                             Day<span style={{ color: '#ff1cb3' }}> Habit</span>
