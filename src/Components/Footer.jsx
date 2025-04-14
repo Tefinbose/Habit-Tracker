@@ -3,6 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTelegram, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
+
 
 function Footer() {
     return (
@@ -10,13 +12,17 @@ function Footer() {
         <>
             <footer>
                 <div
-                    className='row d-flex justify-content-evenly p-4'style={{background: '#9b0067',width: '100%',margin: '0'}}
+                    className='row d-flex justify-content-evenly p-4' style={{ background: '#9b0067', width: '100%', margin: '0' }}
                 >
                     <div className="col-md-3 text-center mt-4">
                         <h5 className='text-white mb-4'>Sign up or Log in </h5>
                         <div>
-                            <Button variant="outline-light" className='btn me-3 ps-4 pe-4 rounded' style={{ color: '#ff1cb3' }}>Sign up</Button>
-                            <Button variant="outline-light" className='btn ps-4 pe-4 rounded' style={{ color: '#ff1cb3' }}>Log In</Button>
+                            <Link to={'/Singup'}>
+                                <Button variant="outline-light" className='btn me-3 ps-4 pe-4 rounded' style={{ color: '#ff1cb3' }}>Sign up</Button>
+                            </Link>
+                            <Link to={'/Login'}>
+                                <Button variant="outline-light" className='btn ps-4 pe-4 rounded' style={{ color: '#ff1cb3' }}>Log In</Button>
+                            </Link>
                         </div>
                     </div>
 
